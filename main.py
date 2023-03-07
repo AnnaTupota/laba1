@@ -10,7 +10,8 @@ def parse1():
     description1 = []  # Информация оОООООО
     description2 = []
     description3 = []
-    for i in range(1, 2 + 1):
+    count=2
+    for i in range(1, count + 1):
         url1 = 'https://www.chitai-gorod.ru/catalog/collections/bestsell?page=' + str(i)  # передаем необходимы URL адрес
         page1 = requests.get(url1)  # отправляем запрос методом Get на данный адрес и получаем ответ в переменную
         print(page1.status_code)  # смотрим ответ
