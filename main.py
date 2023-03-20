@@ -38,7 +38,7 @@ def parse1():
     ech = 1
     for elem1, elem2, elem3 in zip(description1, description2, description3): # Функция zip() в Python создает итератор, который объединяет 
         #элементы из нескольких источников данных.
-        cell = ws.cell(1, ech) # получить ячейку - команда cell, вписываем в ячейку первой строки 1 столбца
+        cell = ws.cell(1, ech) # получить объект-ячейку - команда cell, вписываем в ячейку первой строки 1 столбца
         cell.value = elem1
 
         cell = ws.cell(2, ech)
